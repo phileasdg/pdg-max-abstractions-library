@@ -81,7 +81,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 16.5, 333.492753326892853, 58.0, 22.0 ],
-					"text" : "dim 41 1"
+					"text" : "dim 4 1"
 				}
 
 			}
@@ -419,8 +419,18 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"midpoints" : [ 410.5, 129.0, 62.0, 129.0 ],
+					"order" : 1,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"midpoints" : [ 410.5, 129.420600771903992, 94.199275374412537, 129.420600771903992 ],
+					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 

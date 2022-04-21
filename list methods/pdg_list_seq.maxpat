@@ -126,11 +126,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-10",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 42.963565118434872, 132.0, 30.0, 30.0 ]
 				}
 
@@ -139,7 +139,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-5",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -152,7 +152,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -165,7 +165,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -378,14 +378,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-339",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.454727663276572, 491.418807506561279, 189.596444362049169, 22.0 ],
+					"patching_rect" : [ 13.454727663276572, 491.418807506561279, 189.596444362049169, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 14.583045727367335, 111.418807506561279, 182.596444362049169, 22.0 ],
-					"text" : "0. 2.004008"
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 14.583045727367335, 111.418807506561279, 182.596444362049169, 35.0 ],
+					"text" : "0. 1.666667 3.333333 5. 6.666667 8.333333 10."
 				}
 
 			}
@@ -655,6 +657,29 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "pdg_asc_int_list_0.maxpat",
+				"bootpath" : "~/Documents/Max 8/Library/list methods",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pdg_asc_int_list_1.maxpat",
+				"bootpath" : "~/Documents/Max 8/Library/list methods",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pdg_asc_or_desc_int_list_0.maxpat",
+				"bootpath" : "~/Documents/Max 8/Library/list methods",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"boxgroups" : [ 			{
 				"boxes" : [ "obj-348", "obj-341", "obj-342", "obj-343", "obj-346", "obj-345", "obj-344" ]
 			}
