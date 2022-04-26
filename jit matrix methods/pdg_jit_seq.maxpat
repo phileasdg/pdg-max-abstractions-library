@@ -40,30 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-6",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 429.742692500352859, 224.410671472549438, 82.452834516763687, 47.0 ],
-					"text" : "Outputs twice when A or B is updated"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 457.818180084228516, 281.914128012955189, 150.0, 47.0 ],
-					"text" : "BUG: OUTPUTS TWICE EVERYTIME (NO PROBLEMS YET)"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -141,8 +117,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 418.000423103570938, 922.787111580371857, 52.0, 22.0 ],
-					"text" : "dim 3 1"
+					"patching_rect" : [ 418.000423103570938, 922.787111580371857, 61.0, 22.0 ],
+					"text" : "dim 5 1"
 				}
 
 			}
@@ -162,7 +138,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -432,11 +408,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-339",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 31.825921536453279, 85.17629075050354, 30.0, 30.0 ]
 				}
 
@@ -445,7 +421,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-340",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -458,7 +434,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-341",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -651,7 +627,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-259",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -745,7 +721,7 @@
 			}
 , 			{
 				"box" : 				{
-					"cols" : 3,
+					"cols" : 5,
 					"colwidth" : 40,
 					"fontface" : 0,
 					"fontname" : "Arial",
@@ -1373,43 +1349,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "pdg_jit_asc_int_list_0.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jit matrix methods",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pdg_jit_asc_int_list_1.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jit matrix methods",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pdg_jit_asc_or_desc_int_list_0.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jit matrix methods",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pdg_jit_type_convert.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jit matrix methods",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pdg_two-way<.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/two-way update arithmetic operators",
-				"patcherrelativepath" : "../../two-way update arithmetic operators",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "jfc-style",
 				"default" : 				{

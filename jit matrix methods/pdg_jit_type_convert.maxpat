@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 15,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 472.0, 300.62019944190979, 150.0, 208.0 ],
+					"text" : "NEEDS WORK TO CORRECTLY CONVERT FROM DECIMAL VALUES TO CHAR (CURRENTLY NEEDS TO BE CONVERTED TO LONG FIRST)\n\nNOTE: I THINK CONVERTING TO CHAR SHOULD INVOLVE SCALING TO THE SOURCE DATA RANGE, E.G.: 1 2 3 4 5 (long) = 0 63 127 191 255 (char)"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-155",
 					"linecount" : 5,
 					"maxclass" : "message",
@@ -250,7 +262,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 348.299759948299879, 402.17966091632843, 50.0, 22.0 ],
-					"text" : "255"
+					"text" : "9"
 				}
 
 			}
@@ -274,7 +286,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 250.299759948299879, 402.17966091632843, 50.0, 22.0 ],
-					"text" : "float64"
+					"text" : "long"
 				}
 
 			}
@@ -564,7 +576,7 @@
 			}
 , 			{
 				"box" : 				{
-					"cols" : 255,
+					"cols" : 9,
 					"colwidth" : 25,
 					"fontface" : 0,
 					"fontname" : "Arial",
