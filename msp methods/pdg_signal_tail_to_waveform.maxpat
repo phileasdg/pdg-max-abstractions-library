@@ -40,6 +40,35 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-72",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 56.378306984901428, 1114.0, 704.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 543.798367381095886, 84.392523407936096, 168.905504167079926, 20.0 ],
+					"text" : "Messages and commands:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-64",
+					"linecount" : 29,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 56.378306984901428, 1114.0, 704.0, 395.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 37,
+					"presentation_rect" : [ 543.798367381095886, 84.392523407936096, 403.201632618904114, 503.0 ],
+					"text" : "\n\nAll modes: \n\n- signal to left inlet: a signal input used to fill circular buffer\n- message to middle inlet: send a message to the stored buffer jit.buffer object\n- integer (1, 2, 3) to right inlet: select patcher mode 1, 2, or 3\n\nMode 1:\n\n- bang to left inlet: capture current circular buffer state to stored buffer and release it\n- bang to middle inlet: normalise and release stored buffer\n- capture to middle inlet: update stored buffer from circular buffer without release\n- release to middle inlet: release stored buffer\n\nMode 2: \n\n- bang to left inlet: release stored buffer\n- bang to middle inlet: normalise stored buffer without release \n- capture to middle inlet: update stored buffer from circular buffer without release\n- release to middle inlet: release stored buffer\n\nMode 3: \n\n- toggle to left inlet: toggle continuous stored buffer update and output on or off\n- bang to left inlet: release stored buffer (can be usefull when toggle is off)\n- bang to middle inlet: normalise and release stored buffer (can be useful when toggle is off)\n- capture to middle inlet: update stored buffer from circular buffer without release (can be useful when toggle is off)\n- release to middle inlet: release stored buffer (can be useful when toggle is off)"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-36",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -179,9 +208,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 707.574813842773438, 573.514388084411621, 86.0, 22.0 ],
+					"patching_rect" : [ 707.574813842773438, 627.514388084411621, 86.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 553.687281727790833, 383.093543827533722, 86.0, 22.0 ],
+					"presentation_rect" : [ 23.858624994754791, 500.112228453159332, 86.0, 22.0 ],
 					"text" : "poke~ #2wave"
 				}
 
@@ -193,9 +222,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 707.574813842773438, 533.514388084411621, 40.0, 22.0 ],
+					"patching_rect" : [ 707.574813842773438, 587.514388084411621, 40.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 553.687281727790833, 347.766440987586975, 40.0, 22.0 ],
+					"presentation_rect" : [ 23.858624994754791, 464.785125613212585, 40.0, 22.0 ],
 					"text" : "jit.iter"
 				}
 
@@ -207,9 +236,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 768.074813842773438, 497.514388084411621, 165.0, 22.0 ],
+					"patching_rect" : [ 768.074813842773438, 551.514388084411621, 165.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 614.187281727790833, 311.766440987586975, 165.0, 22.0 ],
+					"presentation_rect" : [ 84.358624994754791, 428.785125613212585, 165.0, 22.0 ],
 					"text" : "buffer~ #2wave @samps 512"
 				}
 
@@ -221,9 +250,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 707.574813842773438, 497.514388084411621, 53.0, 22.0 ],
+					"patching_rect" : [ 707.574813842773438, 551.514388084411621, 53.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 553.687281727790833, 311.766440987586975, 53.0, 22.0 ],
+					"presentation_rect" : [ 23.858624994754791, 428.785125613212585, 53.0, 22.0 ],
 					"text" : "jit.matrix"
 				}
 
@@ -276,7 +305,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 332.903465310732599, 85.283942520618439, 228.236068576574326, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 300.771390716234919, 319.274594843387604, 228.236068576574326, 34.0 ],
+					"presentation_rect" : [ 300.771390716234919, 323.274594843387604, 228.236068576574326, 34.0 ],
 					"text" : "TEST MODE PANEL",
 					"textjustification" : 1
 				}
@@ -292,7 +321,7 @@
 					"patching_rect" : [ 53.628727753957037, 30.076994240283966, 76.749579230944391, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 21.496653159459356, 264.067646563053131, 76.749579230944391, 33.0 ],
+					"presentation_rect" : [ 21.496653159459356, 268.067646563053131, 76.749579230944391, 33.0 ],
 					"text" : "Test mode toggle on/off"
 				}
 
@@ -305,7 +334,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 441.729897240797754, 29.854770958423615, 119.620253562927246, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 409.597822646300074, 263.84542328119278, 119.620253562927246, 20.0 ],
+					"presentation_rect" : [ 409.597822646300074, 267.84542328119278, 119.620253562927246, 20.0 ],
 					"text" : "mode (int) argument"
 				}
 
@@ -318,7 +347,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 285.769641617933985, 29.854770958423615, 99.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 253.637567023436304, 263.84542328119278, 99.0, 20.0 ],
+					"presentation_rect" : [ 253.637567023436304, 267.84542328119278, 99.0, 20.0 ],
 					"text" : "toggle to left inlet"
 				}
 
@@ -331,7 +360,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 312.099862317244288, 61.017653524875641, 123.669779300689697, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 279.967787722746607, 295.008305847644806, 123.669779300689697, 20.0 ],
+					"presentation_rect" : [ 279.967787722746607, 299.008305847644806, 123.669779300689697, 20.0 ],
 					"text" : "capture to right outlet"
 				}
 
@@ -344,7 +373,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 164.75835017363238, 61.017653524875641, 90.35087776184082, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 132.626275579134699, 295.008305847644806, 90.35087776184082, 20.0 ],
+					"presentation_rect" : [ 132.626275579134699, 299.008305847644806, 90.35087776184082, 20.0 ],
 					"text" : "bang right inlet"
 				}
 
@@ -359,7 +388,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 138.75835017363238, 61.017653524875641, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 106.626275579134699, 295.008305847644806, 24.0, 24.0 ]
+					"presentation_rect" : [ 106.626275579134699, 299.008305847644806, 24.0, 24.0 ]
 				}
 
 			}
@@ -371,7 +400,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 164.75835017363238, 29.854770958423615, 90.35087776184082, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 132.626275579134699, 263.84542328119278, 90.35087776184082, 20.0 ],
+					"presentation_rect" : [ 132.626275579134699, 267.84542328119278, 90.35087776184082, 20.0 ],
 					"text" : "bang left inlet"
 				}
 
@@ -386,7 +415,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 53.628727753957037, 69.438106179237366, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 21.496653159459356, 303.428758502006531, 45.0, 45.0 ]
+					"presentation_rect" : [ 21.496653159459356, 307.428758502006531, 45.0, 45.0 ]
 				}
 
 			}
@@ -435,7 +464,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 261.099862317244288, 61.017653524875641, 49.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 228.967787722746607, 295.008305847644806, 49.0, 22.0 ],
+					"presentation_rect" : [ 228.967787722746607, 299.008305847644806, 49.0, 22.0 ],
 					"text" : "capture"
 				}
 
@@ -452,7 +481,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 389.729897240797754, 29.854770958423615, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 357.597822646300074, 263.84542328119278, 50.0, 22.0 ]
+					"presentation_rect" : [ 357.597822646300074, 267.84542328119278, 50.0, 22.0 ]
 				}
 
 			}
@@ -466,7 +495,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 261.099862317244288, 29.854770958423615, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 228.967787722746607, 263.84542328119278, 24.0, 24.0 ]
+					"presentation_rect" : [ 228.967787722746607, 267.84542328119278, 24.0, 24.0 ]
 				}
 
 			}
@@ -480,7 +509,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 138.62788621584582, 29.854770958423615, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 106.495811621348139, 263.84542328119278, 24.0, 24.0 ]
+					"presentation_rect" : [ 106.495811621348139, 267.84542328119278, 24.0, 24.0 ]
 				}
 
 			}
@@ -493,7 +522,7 @@
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 103.13531619310379, 69.438106179237366, 27.242990791797638, 27.242990791797638 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 70.227363109588623, 303.428758502006531, 30.337682485580444, 30.337682485580444 ]
+					"presentation_rect" : [ 70.227363109588623, 307.428758502006531, 30.337682485580444, 30.337682485580444 ]
 				}
 
 			}
@@ -761,7 +790,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 700.094495832920074, 254.577275335788727, 52.905504167079926, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 648.0, 59.392523407936096, 52.905504167079926, 20.0 ],
+					"presentation_rect" : [ 270.389425004522082, 375.785125613212585, 52.905504167079926, 20.0 ],
 					"text" : "Modes:"
 				}
 
@@ -817,7 +846,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 238.378306984901428, 816.454544067382812, 522.0, 277.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 16.378306984901428, 84.392523407936096, 621.102011024951935, 165.0 ]
+					"presentation_rect" : [ 16.378306984901428, 84.392523407936096, 517.403265237808228, 165.0 ]
 				}
 
 			}
@@ -825,15 +854,15 @@
 				"box" : 				{
 					"fontface" : 0,
 					"id" : "obj-23",
-					"linecount" : 10,
+					"linecount" : 15,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 700.094495832920074, 278.977908611297607, 195.0, 141.0 ],
+					"patching_rect" : [ 700.094495832920074, 278.977908611297607, 195.0, 208.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 12,
-					"presentation_rect" : [ 648.0, 81.392523407936096, 172.0, 167.0 ],
-					"text" : "- mode 1: jit.buffer updates and is released when you send a bang to the left inlet\n- mode 2: jit.buffer updates when you send \"capture\" message to middle inlet, and is released with bang to left inlet.\n- mode 3: jit.buffer updates and is released continuously when the toggle is on in the right inlet."
+					"presentation_rect" : [ 270.389425004522082, 400.785125613212585, 263.618034288287163, 167.0 ],
+					"text" : "- mode 1: jit.buffer updates and is released when you send a bang to the left inlet.\n- mode 2: jit.buffer updates when you send \"capture\" message to middle inlet, and is released with bang to left inlet.\n- mode 3: jit.buffer updates and is released continuously when the toggle is on in the right inlet.\n\nSee documentation below for a more detailed description of the patcher behaviour in different modes."
 				}
 
 			}
@@ -1038,7 +1067,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.510381579399109, 24.77578866481781, 517.403265237808228, 99.357174873352051 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 16.378306984901428, 258.766440987586975, 517.403265237808228, 99.357174873352051 ],
+					"presentation_rect" : [ 16.378306984901428, 262.766440987586975, 517.403265237808228, 99.357174873352051 ],
 					"proportion" : 0.5
 				}
 
@@ -1050,10 +1079,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 700.094495832920074, 444.514388084411621, 232.980318009853363, 47.0 ],
+					"patching_rect" : [ 700.094495832920074, 498.514388084411621, 232.980318009853363, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 546.206963717937469, 258.766440987586975, 232.980318009853363, 47.0 ],
+					"presentation_rect" : [ 16.378306984901428, 375.785125613212585, 232.980318009853363, 47.0 ],
 					"text" : "Note: I suggest using this construction to send the output matrix of this abstraction into a new buffer: "
 				}
 
@@ -1069,9 +1098,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 700.094495832920074, 444.514388084411621, 238.805054247379303, 156.444043397903442 ],
+					"patching_rect" : [ 700.094495832920074, 498.514388084411621, 238.805054247379303, 156.444043397903442 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 546.206963717937469, 258.766440987586975, 238.805054247379303, 156.444043397903442 ],
+					"presentation_rect" : [ 16.378306984901428, 375.785125613212585, 238.805054247379303, 156.444043397903442 ],
 					"proportion" : 0.5
 				}
 
@@ -1087,9 +1116,27 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 700.094495832920074, 254.577275335788727, 195.0, 165.400633275508881 ],
+					"patching_rect" : [ 700.094495832920074, 254.577275335788727, 195.0, 232.400633275508881 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 648.0, 59.392523407936096, 172.0, 190.0 ],
+					"presentation_rect" : [ 270.389425004522082, 375.785125613212585, 263.392147218187574, 190.0 ],
+					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.958864795918367, 0.900855654761905, 0.707669005102041, 1.0 ],
+					"border" : 1,
+					"bordercolor" : [ 0.682352941176471, 0.76078431372549, 0.768627450980392, 1.0 ],
+					"id" : "obj-68",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 56.378306984901428, 1114.0, 704.0, 395.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 543.798367381095886, 84.392523407936096, 403.201632618904114, 503.0 ],
 					"proportion" : 0.5
 				}
 
@@ -1741,10 +1788,13 @@
 				"boxes" : [ "obj-71", "obj-87", "obj-85", "obj-88", "obj-99", "obj-101" ]
 			}
 , 			{
-				"boxes" : [ "obj-23", "obj-103", "obj-49" ]
+				"boxes" : [ "obj-4", "obj-39", "obj-5", "obj-10", "obj-63", "obj-20", "obj-19", "obj-9" ]
 			}
 , 			{
-				"boxes" : [ "obj-4", "obj-39", "obj-5", "obj-10", "obj-63", "obj-20", "obj-19", "obj-9" ]
+				"boxes" : [ "obj-103", "obj-23", "obj-49" ]
+			}
+, 			{
+				"boxes" : [ "obj-64", "obj-68", "obj-72" ]
 			}
  ]
 	}
