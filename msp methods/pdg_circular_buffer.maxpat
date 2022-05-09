@@ -40,13 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 3,
+					"fontname" : "Courier New",
+					"fontsize" : 20.0,
+					"id" : "obj-81",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 174.0, 481.0, 382.0, 29.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 117.931563076873658, 458.229169011116028, 135.763149425387383, 74.0 ],
+					"text" : "CHECK THIS AND UPDATE IF NEEDED"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-104",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 730.434688568115234, 703.260779023170471, 53.260869145393372, 22.0 ],
-					"text" : "48000."
+					"text" : "512"
 				}
 
 			}
@@ -76,7 +93,7 @@
 			}
 , 			{
 				"box" : 				{
-					"cols" : 48000,
+					"cols" : 512,
 					"colwidth" : 25,
 					"fontface" : 0,
 					"fontname" : "Arial",
@@ -577,7 +594,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 238.378306984901428, 774.325555026531219, 124.0, 22.0 ],
-					"text" : "frames 48000"
+					"text" : "frames 512"
 				}
 
 			}
